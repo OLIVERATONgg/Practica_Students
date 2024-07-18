@@ -12,10 +12,11 @@ public class StudentDTO {
 	private Collection<String> currentSubject;
 	private Boolean currentPopularSubject;
 
-	public StudentDTO(String studentName, Collection<String> currentSubject) {
+	public StudentDTO(String studentName, Collection<String> currentSubject,Boolean current) {
 		super();
 		this.studentName = studentName;
 		this.currentSubject = currentSubject;
+		this.currentPopularSubject=current;
 	}
 
 	public StudentDTO(String studentName, Boolean currentPopularSubject) {
